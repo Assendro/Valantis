@@ -1,0 +1,211 @@
+/* сброс стилей */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+html, body {
+	height: 100%;
+}
+/* конец сброса стилей */
+
+body {
+  background-color: gray;
+  color: wheat;
+  font-family: 'Montserrat';
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+main {
+  width: 90%;
+  margin: 10px auto;
+}
+.container {
+  width: 95%;
+  min-height: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.card { 
+  width: 18%;
+
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(146, 132, 106);
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition: all 0.2s;
+}
+.card:hover { 
+  background-color: rgb(168, 146, 105);
+  cursor: pointer;
+}
+.cardHeader {
+  text-align: center;
+  color: rgb(197, 212, 139);
+}
+.brand {
+  font-size: 0.8vw;
+}
+.price {
+  color: rgb(236, 184, 87);
+}
+.id {
+  font-size: 0.5vw;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  
+}
+.buttonRight, .buttonLeft {
+  background-color: rgb(139, 146, 106);
+  cursor: pointer;
+  top: 40%;
+  width: 30px;
+  height: 100px;
+  position: sticky;
+
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.buttonRight:hover, .buttonLeft:hover {
+  background-color: rgb(117, 146, 106);
+}
+.loading {
+  width: 100vw;
+  height: 200vh;
+  text-align: center;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.navigation-button, .current-navigation-button, .ellipses {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(139, 146, 106);
+  transition: all 0.2s;
+  font-size: 0.5vw;
+
+  margin: 5px;
+}
+.current-navigation-button {
+  background-color: rgb(117, 146, 106);
+}
+.ellipses {
+  font-size: 1vw;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+.input-name, .input-price, .input-brand {
+  border-radius: 10px;
+  background-color: rgb(146, 132, 106);
+  padding: 10px;
+  margin: 10px;
+}
+.input-button {
+  transition: all 0.2s;
+}
+.input-button:hover {
+  color: rgb(216, 165, 72);
+}
