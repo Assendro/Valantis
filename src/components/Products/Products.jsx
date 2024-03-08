@@ -340,9 +340,12 @@ class Products extends React.Component {
   }
 
   componentDidMount() {
+<<<<<<< HEAD
     this.countAllUnfilteredProducts()
   }
   componentWillUnmount() { 
+=======
+>>>>>>> 31804f4b94b273994d47a805347943387e24f0c8
     this.countAllUnfilteredProducts()
   }
 
