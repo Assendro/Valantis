@@ -79,10 +79,9 @@ class Input extends React.Component {
 
   } 
   componentDidMount() {
-  }
-  componentWillUnmount() { 
     this.takeBrands()   
   }
+
 
 
 
