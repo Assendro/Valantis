@@ -340,6 +340,7 @@ class Products extends React.Component {
   }
 
   componentDidMount() {
+    this.countAllUnfilteredProducts()
   }
   componentWillUnmount() { 
     this.countAllUnfilteredProducts()
