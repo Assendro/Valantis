@@ -79,12 +79,8 @@ class Input extends React.Component {
 
   } 
   componentDidMount() {
+    this.takeBrands()  
   }
-  componentWillUnmount() { 
-    this.takeBrands()   
-  }
-
-
 
   render() {
     const {brandNames, error, isLoaded} = this.state
